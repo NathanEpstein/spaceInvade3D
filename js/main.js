@@ -31,7 +31,7 @@
             new Invader({
               game: self,
               scene: scene,
-              row: row,
+              velocity: Math.pow(-1,row)*0.25,
               x: -42 + col*12,
               y: -12 + 12*row,
               z: -50,

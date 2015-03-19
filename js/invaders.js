@@ -14,12 +14,20 @@ var Invader = function(config){
     return cube;
   };
   self.cube = makeInvader();
+  self.shift = 0;
 };
 
 Invader.prototype = {
   update: function(){
     this.cube.rotation.x += 0.05;
     this.cube.rotation.y += 0.05;
+
+    // move back and forth
+    if (this.shift > 10 || this.shift < -10){
+      this.velocity = (-1) * this.velocity;
+    }
+    this.cube.position.x += this.velocity;
+    this.shift += this.velocity;
 
     if (Math.random() > 0.995){
       this.fire();
