@@ -1,0 +1,25 @@
+{
+  "name": "space3d",
+  "version": "0.0.0",
+  "authors": [
+    "NathanEpstein <ne2210@columbia.edu>"
+  ],
+  "description": "space invaders in 3d using threejs",
+  "main": "main.html",
+  "keywords": [
+    "game",
+    "3d"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "threejs": "*"
+  }
+}
